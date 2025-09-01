@@ -51,4 +51,12 @@ cd REPO
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
 source install/setup.bash
+```
+## 👨‍💻 Authors
+
+- **Shadab Ahmad Khna** – Developer & Maintaine  
+- Simulation Support  
+- Hardware Integration  
+- Documentation
+- **mail** -shadabahmadkhan272@gmail.com 
 
