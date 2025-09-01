@@ -39,6 +39,7 @@ This project integrates a mobile ground robot and a UAV into a single platform. 
 - Test SLAM, navigation, and UAV surveillance in virtual environments  
 
 ---
+![ROSbot + UAV](assets/images/uav_on_rosbot.jpg)
 
 ---
 
