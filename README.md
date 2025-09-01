@@ -1,21 +1,48 @@
-# ROSbot + UAV
+# ROSbot + UAV — Ground Robot with Aerial Surveillance
 
-ROSbot is a differential-drive ground robot (ROS 2 Jazzy) with a small UAV mounted on top for aerial surveillance and inspection. The ground platform handles navigation, SLAM and obstacle avoidance while the UAV provides overhead imagery and telemetry via MAVLink (`mavros`).
+**ROSbot** is a differential-drive ground robot built using **ROS 2 Jazzy**. It is equipped with a 2D LiDAR for SLAM and navigation and uses an Arduino for motor control. A **UAV (drone)** is mounted on top to provide **aerial surveillance**, giving a combined ground and aerial view of the environment.
 
-## Features
-- Differential drive with encoder feedback (N25 motors + L298N + Arduino Nano)  
-- 2D LiDAR for SLAM (SLAM Toolbox) and Nav2 for navigation  
-- UAV integration (PX4/ArduPilot + `mavros`) for aerial imaging  
-- Works in Gazebo and on real hardware  
-- Teleoperation and autonomous mission examples
+---
 
-## Requirements
-- ROS 2 Jazzy  
-- `nav2_bringup`, `slam_toolbox`, `mavros`  
-- Arduino IDE or `arduino-cli` for uploading sketches  
-- Gazebo (for simulation)
+## 📖 Project Overview
+This project integrates a mobile ground robot and a UAV into a single platform. The ROSbot handles ground navigation, obstacle avoidance, and mapping, while the drone enables aerial surveillance for extended situational awareness. The system is designed for both **simulation in Gazebo** and **deployment on real hardware**.
 
-## Quick setup
+---
+
+## ✨ Features
+- Differential-drive ground platform  
+- 2D LiDAR for SLAM and autonomous navigation (SLAM Toolbox + Nav2)  
+- Arduino Nano for motor & encoder interface  
+- UAV mounted for aerial surveillance  
+- Works in both Gazebo simulation and on physical hardware  
+
+---
+
+## 🚁 Drone
+- A quadcopter is mounted on the ROSbot.  
+- Purpose: **Aerial surveillance** to complement ground navigation.  
+
+---
+
+## 🔧 Hardware (Ground Robot)
+- **Motors:** 2 × N25 DC motors with encoders  
+- **Motor Driver:** L298N  
+- **Controller:** Arduino Nano  
+- **Sensors:** 2D LiDAR (e.g., RPLIDAR)  
+- **Other:** Caster wheel, battery/power system  
+
+---
+
+## 🖥️ Simulation
+- Gazebo for robot and UAV simulation  
+- PX4/ArduPilot SITL for UAV (optional)  
+- Test SLAM, navigation, and UAV surveillance in virtual environments  
+
+---
+
+---
+
+## ⚡ Quick Setup
 ```bash
 # clone and build
 git clone https://github.com/USERNAME/REPO.git
