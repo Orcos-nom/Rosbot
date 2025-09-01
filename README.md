@@ -46,7 +46,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## ⚡ Quick Setup
 ```bash
 # clone and build
-git clone https://github.com/USERNAME/REPO.git
+git clone https://github.com/Orcus-nom/REPO.git
 cd REPO
 source /opt/ros/jazzy/setup.bash
 colcon build --symlink-install
